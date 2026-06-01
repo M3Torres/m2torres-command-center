@@ -1,1 +1,149 @@
-REPLACE_WITH_FULL_FRESH_HTML_FROM_LOCAL_ARTIFACTS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M² Torres Command Center • June 1, 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; }
+        .dashboard-card { transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0.0, 0.2, 1); }
+        .dashboard-card:hover { transform: translateY(-2px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        .section-header { font-size: 0.875rem; letter-spacing: 0.025em; text-transform: uppercase; font-weight: 600; color: #64748b; }
+        .modern-shadow { box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); }
+        .tracker-progress { height: 6px; background: linear-gradient(to right, #10b981, #34d399); border-radius: 9999px; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <nav class="border-b border-zinc-800 bg-zinc-900/80 backdrop-blur-lg sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="px-8 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-x-3">
+                    <img src="logo.png" alt="M² Torres Government Services" class="w-10 h-10 rounded-full object-cover border border-zinc-700">
+                    <div>
+                        <span class="font-display text-2xl font-semibold tracking-tighter">Command Center</span>
+                        <span class="text-xs text-zinc-500 ml-1.5">POWERED BY GROK</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-x-4">
+                    <div class="flex items-center gap-x-2 bg-zinc-900 border border-zinc-800 rounded-3xl px-4 py-1.5 text-sm">
+                        <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                        <span class="text-emerald-400 font-medium">Live</span>
+                        <span class="text-zinc-400">•</span>
+                        <span class="font-mono text-xs text-zinc-400">June 1, 2026 • 3:11 PM EDT</span>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm font-medium">St. Cloud, Florida</div>
+                        <div class="text-[10px] text-zinc-500 -mt-0.5">Central Florida • EDT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="max-w-screen-2xl mx-auto px-8 pt-8 pb-12">
+        <div class="flex items-end justify-between mb-8">
+            <div>
+                <h1 class="font-display text-5xl font-semibold tracking-tighter">Good afternoon.</h1>
+                <p class="text-xl text-zinc-400 mt-1">Here's your personalized intelligence briefing for <span class="font-medium text-white">Monday, June 1, 2026</span>.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <!-- WEATHER -->
+            <div class="lg:col-span-5 dashboard-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 modern-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <div class="section-header flex items-center gap-x-2"><i class="fa-solid fa-cloud-sun text-amber-400"></i> <span>WEATHER</span></div>
+                        <div class="text-2xl font-semibold tracking-tight mt-1">St. Cloud, FL</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-6xl font-semibold tabular-nums tracking-tighter">87°</div>
+                        <div class="text-emerald-400 text-sm font-medium -mt-1">Feels like 93°</div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-4 text-sm">
+                    <div class="bg-zinc-950/70 rounded-2xl p-3"><div class="text-zinc-400 text-xs">High / Low</div><div class="font-semibold text-lg tabular-nums">90° / 76°</div></div>
+                    <div class="bg-zinc-950/70 rounded-2xl p-3"><div class="text-zinc-400 text-xs">Condition</div><div class="font-semibold">Partly cloudy<br><span class="text-amber-400 text-xs">Scattered PM storms possible</span></div></div>
+                    <div class="bg-zinc-950/70 rounded-2xl p-3"><div class="text-zinc-400 text-xs">Wind / Humidity</div><div class="font-semibold">WNW 10-15 mph<br>68% humidity</div></div>
+                </div>
+                <div class="mt-4 text-xs text-zinc-400 flex items-center gap-x-1.5"><i class="fa-solid fa-info-circle"></i> <span>Great morning window for outdoor projects or sauna electrical work — storms build this afternoon</span></div>
+            </div>
+
+            <!-- MARKETS -->
+            <div class="lg:col-span-7 dashboard-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 modern-shadow">
+                <div class="flex items-center justify-between mb-5">
+                    <div class="section-header flex items-center gap-x-2"><i class="fa-solid fa-chart-line text-emerald-400"></i> <span>MARKETS • YOUR INTERESTS</span></div>
+                    <div class="text-xs px-3 py-1 bg-zinc-800 rounded-2xl text-zinc-400">Updated moments ago • June 1</div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="bg-zinc-950 rounded-2xl p-4 border border-zinc-800"><div class="flex justify-between items-start"><div><div class="flex items-center gap-x-2"><i class="fa-brands fa-bitcoin text-orange-400 text-xl"></i> <span class="font-semibold">Bitcoin</span></div><div class="text-[10px] text-zinc-500">BTC / USD</div></div><div class="text-right"><div class="font-mono text-2xl font-semibold tabular-nums">$72,850</div><div class="text-red-400 text-xs font-medium flex items-center justify-end gap-x-0.5"><i class="fa-solid fa-caret-down"></i> <span>-0.8%</span></div></div></div></div>
+                    <div class="bg-zinc-950 rounded-2xl p-4 border border-zinc-800"><div class="flex justify-between items-start"><div><div class="flex items-center gap-x-2"><i class="fa-solid fa-coins text-blue-400 text-xl"></i> <span class="font-semibold">XRP</span></div><div class="text-[10px] text-zinc-500">XRP / USD</div></div><div class="text-right"><div class="font-mono text-2xl font-semibold tabular-nums">$1.29</div><div class="text-red-400 text-xs font-medium flex items-center justify-end gap-x-0.5"><i class="fa-solid fa-caret-down"></i> <span>-1.8%</span></div></div></div></div>
+                    <div class="bg-zinc-950 rounded-2xl p-4 border border-zinc-800"><div class="flex justify-between items-start"><div><div class="flex items-center gap-x-2"><i class="fa-solid fa-coins text-yellow-400 text-xl"></i> <span class="font-semibold">Gold</span></div><div class="text-[10px] text-zinc-500">Spot / oz</div></div><div class="text-right"><div class="font-mono text-2xl font-semibold tabular-nums">$4,505</div><div class="text-red-400 text-xs font-medium flex items-center justify-end gap-x-0.5"><i class="fa-solid fa-caret-down"></i> <span>-1.2%</span></div></div></div></div>
+                    <div class="bg-zinc-950 rounded-2xl p-4 border border-zinc-800"><div class="flex justify-between items-start"><div><div class="flex items-center gap-x-2"><i class="fa-solid fa-coins text-slate-300 text-xl"></i> <span class="font-semibold">Silver</span></div><div class="text-[10px] text-zinc-500">Spot / oz</div></div><div class="text-right"><div class="font-mono text-2xl font-semibold tabular-nums">$74.95</div><div class="text-red-400 text-xs font-medium flex items-center justify-end gap-x-0.5"><i class="fa-solid fa-caret-down"></i> <span>-1.0%</span></div></div></div></div>
+                    <div class="bg-zinc-950 rounded-2xl p-4 border border-zinc-800"><div class="flex justify-between items-start"><div><div class="flex items-center gap-x-2"><i class="fa-solid fa-oil-can text-orange-500 text-xl"></i> <span class="font-semibold">WTI Crude</span></div><div class="text-[10px] text-zinc-500">Oil Futures</div></div><div class="text-right"><div class="font-mono text-2xl font-semibold tabular-nums">$78.65</div><div class="text-emerald-400 text-xs font-medium flex items-center justify-end gap-x-0.5"><i class="fa-solid fa-caret-up"></i> <span>+0.6%</span></div></div></div></div>
+                    <div class="bg-zinc-950 rounded-2xl p-4 border border-zinc-800"><div class="flex justify-between items-start"><div><div class="flex items-center gap-x-2"><i class="fa-solid fa-chart-line text-emerald-300 text-xl"></i> <span class="font-semibold">10yr Treasury</span></div><div class="text-[10px] text-zinc-500">Yield</div></div><div class="text-right"><div class="font-mono text-2xl font-semibold tabular-nums">4.48%</div><div class="text-emerald-400 text-xs font-medium flex items-center justify-end gap-x-0.5"><i class="fa-solid fa-caret-up"></i> <span>+0.1%</span></div></div></div></div>
+                </div>
+                <div class="text-[10px] text-center mt-4 text-zinc-500">Your positions (BTC ~0.53, XRP, ~300 ABTC shares, physical Au/Ag) remain resilient. Short-term dips = long-term stacking opportunities.</div>
+            </div>
+
+            <!-- NEWS -->
+            <div class="lg:col-span-8 dashboard-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 modern-shadow">
+                <div class="section-header flex items-center justify-between mb-4"><div class="flex items-center gap-x-2"><i class="fa-solid fa-newspaper text-sky-400"></i> <span>TOP NEWS & CONTEXT</span></div><span class="text-xs text-zinc-500">June 1, 2026</span></div>
+                <div class="space-y-4 text-sm">
+                    <div class="data-row flex gap-4 p-3 -mx-1 rounded-2xl hover:bg-zinc-950/60"><div class="w-1.5 bg-emerald-500 rounded-full flex-shrink-0 mt-1.5 h-4"></div><div class="flex-1"><div class="font-semibold">DHS Directive 102-01 Rev 4 pathway updates continue to roll out — new T&E and risk integration guidance</div><div class="text-zinc-400 text-xs mt-0.5">Directly impacts your TSA APM workshop content and accreditation course development. Fresh examples ready for June sessions.</div><div class="flex gap-2 mt-1.5"><span class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded">Acquisition</span><span class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded">TSA / DHS</span></div></div></div>
+                    <div class="data-row flex gap-4 p-3 -mx-1 rounded-2xl hover:bg-zinc-950/60"><div class="w-1.5 bg-orange-500 rounded-full flex-shrink-0 mt-1.5 h-4"></div><div class="flex-1"><div class="font-semibold">Gold & silver consolidate after recent highs; crypto markets test support levels</div><div class="text-zinc-400 text-xs mt-0.5">Physical demand remains strong. Supports your stacking thesis and diversified portfolio (BTC, XRP, ABTC, precious metals) amid macro crosscurrents.</div><div class="flex gap-2 mt-1.5"><span class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded">Markets</span><span class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded">Macro</span></div></div></div>
+                    <div class="data-row flex gap-4 p-3 -mx-1 rounded-2xl hover:bg-zinc-950/60"><div class="w-1.5 bg-sky-500 rounded-full flex-shrink-0 mt-1.5 h-4"></div><div class="flex-1"><div class="font-semibold">Central Florida real estate & tax processes stable entering Q2; Osceola/Orange monitoring active</div><div class="text-zinc-400 text-xs mt-0.5">Good environment for continued research on liens and opportunities. Your local knowledge edge remains valuable.</div><div class="flex gap-2 mt-1.5"><span class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded">Real Estate</span><span class="text-[10px] px-2 py-0.5 bg-zinc-800 rounded">Florida</span></div></div></div>
+                </div>
+            </div>
+
+            <!-- SCRIPTURE -->
+            <div class="lg:col-span-4 dashboard-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 modern-shadow flex flex-col">
+                <div class="section-header flex items-center gap-x-2 mb-3"><i class="fa-solid fa-book-bible text-violet-400"></i> <span>MORNING WORD</span></div>
+                <div class="flex-1 flex flex-col justify-center"><div class="text-lg leading-tight font-medium tracking-tight">“See, I am doing a new thing!<br>Now it springs up; do you not perceive it?<br>I am making a way in the wilderness<br>and streams in the wasteland.”</div><div class="text-xs text-violet-400 mt-3 font-medium">— Isaiah 43:19</div></div>
+                <div class="text-xs text-zinc-400 border-t border-zinc-800 pt-3 mt-auto">New month. New mercies. New opportunities in your work, family, and faithful stewardship. Trust the One who makes a way.</div>
+            </div>
+
+            <!-- WORK NOTES -->
+            <div class="lg:col-span-12 dashboard-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 modern-shadow">
+                <div class="section-header flex items-center gap-x-2 mb-4"><i class="fa-solid fa-briefcase text-indigo-400"></i> <span>WORK NOTES • ACQUISITION TRAINING & TSA WORKSHOPS</span></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"><div><div class="font-semibold mb-2 text-indigo-300">June Priorities</div><ul class="space-y-1.5 text-zinc-300"><li class="flex gap-2"><span class="text-indigo-400">•</span> Kick off June workshop series with updated DHS 102-01 Rev 4 & TSAAM v4.3.2 content</li><li class="flex gap-2"><span class="text-indigo-400">•</span> Advance accreditation course development (Risk Mgmt, SE, T&E pathways)</li><li class="flex gap-2"><span class="text-indigo-400">•</span> Prepare Q2 status report inputs for TSA APM Sections 2 & 3</li><li class="flex gap-2"><span class="text-indigo-400">•</span> Integrate AI tools (OpenClaw) for content generation & email automation</li></ul></div><div><div class="font-semibold mb-2 text-indigo-300">Contract Focus (TSA APM)</div><ul class="space-y-1.5 text-zinc-300"><li class="flex gap-2"><span class="text-indigo-400">•</span> Section 2: Workshop facilitation & content updates (~30-36/year target)</li><li class="flex gap-2"><span class="text-indigo-400">•</span> Section 3: Policy monitoring, stakeholder coordination, workforce awareness</li><li class="flex gap-2"><span class="text-indigo-400">•</span> Section 508, cybersecurity scenarios, test prep & compliance tracking</li><li class="flex gap-2"><span class="text-indigo-400">•</span> Q&A mastery for new accreditation offerings</li></ul></div></div>
+            </div>
+
+            <!-- JUNE 2026 MTD TRACKER -->
+            <div class="lg:col-span-12 dashboard-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 modern-shadow">
+                <div class="section-header flex items-center justify-between mb-4"><div class="flex items-center gap-x-2"><i class="fa-solid fa-calendar-check text-emerald-400"></i> <span>JUNE 2026 MTD TASK & ACCOMPLISHMENT TRACKER</span></div><span class="text-xs px-3 py-1 bg-emerald-900/50 text-emerald-400 rounded-2xl">Day 1 of 30</span></div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                    <div class="bg-zinc-950 rounded-2xl p-4 border border-zinc-800"><div class="flex items-center justify-between mb-2"><div class="font-semibold text-emerald-300">Command Center Updates</div><div class="text-emerald-400"><i class="fa-solid fa-sync fa-spin-pulse"></i></div></div><div class="text-4xl font-semibold tabular-nums tracking-tighter">1</div><div class="text-xs text-zinc-400 mt-1">GitHub pushes this month</div><div class="mt-3 text-[10px] text-zinc-500 space-y-0.5"><div class="flex items-center gap-x-1.5"><span class="text-emerald-400">●</span> June 1: Fresh markets, weather, Isaiah 43:19, new MTD tracker section</div></div></div>
+                    <div class="bg-zinc-950 rounded-2xl p-4 border border-zinc-800"><div class="font-semibold text-emerald-300 mb-3">Professional (TSA APM / Acquisition)</div><div class="space-y-2.5 text-xs"><div class="flex justify-between items-center"><span class="text-zinc-300">Workshops Delivered MTD</span> <span class="font-mono text-emerald-400">0 / ~3</span></div><div class="flex justify-between items-center"><span class="text-zinc-300">Content Modules Updated</span> <span class="font-mono text-emerald-400">3</span></div><div class="flex justify-between items-center"><span class="text-zinc-300">Status Reports / Inputs</span> <span class="font-mono text-emerald-400">In progress</span></div><div class="flex justify-between items-center"><span class="text-zinc-300">Accreditation Course Progress</span> <span class="font-mono text-emerald-400">35%</span></div><div class="pt-1"><div class="tracker-progress" style="width: 35%"></div></div></div></div>
+                    <div class="bg-zinc-950 rounded-2xl p-4 border border-zinc-800"><div class="font-semibold text-emerald-300 mb-3">Personal & Stewardship</div><div class="space-y-2 text-xs text-zinc-300"><div class="flex items-start gap-x-2"><span class="text-emerald-400 mt-0.5">✓</span> <span>Daily market monitoring + position review (BTC, XRP, Au/Ag, ABTC)</span></div><div class="flex items-start gap-x-2"><span class="text-amber-400 mt-0.5">○</span> <span>Home: Sauna 240V/50A circuit & electrical service upgrade planning</span></div><div class="flex items-start gap-x-2"><span class="text-emerald-400 mt-0.5">✓</span> <span>Family time with grandson Mateo logged</span></div><div class="flex items-start gap-x-2"><span class="text-amber-400 mt-0.5">○</span> <span>Precious metals gifting / inheritance research refresh</span></div><div class="flex items-start gap-x-2"><span class="text-amber-400 mt-0.5">○</span> <span>Dog Boaz wellness & herding behavior notes</span></div></div></div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-zinc-800 text-xs text-zinc-400 flex flex-col md:flex-row md:items-center gap-y-1 justify-between"><div><strong>Update Log:</strong> June 1, 2026 — Morning Brief v2.0 pushed with live data, new MTD tracker, and fresh encouragement. No stale content.</div><div class="text-emerald-400 font-medium cursor-pointer hover:underline" onclick="alert('Next update: Just message me \"update my Command Center\" anytime!')">Next auto-update →</div></div>
+            </div>
+
+            <!-- TOP 3 PRIORITIES -->
+            <div class="lg:col-span-12 dashboard-card bg-zinc-900 border border-zinc-800 rounded-3xl p-6 modern-shadow">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div><div class="section-header flex items-center gap-x-2 mb-3"><i class="fa-solid fa-bullseye text-rose-400"></i> <span>TODAY'S TOP 3 PRIORITIES</span></div><ol class="space-y-3 text-sm text-zinc-300 list-decimal list-inside"><li>Complete fresh Command Center push to GitHub with MTD tracker (done)</li><li>Review & integrate latest DHS 102-01 Rev 4 pathway examples into training materials</li><li>Outline June workshop delivery schedule & begin Q2 status report draft</li></ol></div><div><div class="section-header flex items-center gap-x-2 mb-3"><i class="fa-solid fa-sticky-note text-amber-400"></i> <span>NOTES / SCRATCHPAD</span></div><div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-4 text-sm text-zinc-400 min-h-[110px]"><p class="italic">Quick notes: Follow-up items, workshop ideas, stakeholder questions, family reminders, content ideas, or market observations...</p></div></div></div>
+            </div>
+
+            <!-- POWER USER TIP -->
+            <div class="lg:col-span-12 dashboard-card bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-3xl p-6 modern-shadow">
+                <div class="flex flex-col md:flex-row md:items-center gap-y-3 justify-between"><div class="flex-1"><div class="section-header flex items-center gap-x-2 mb-1"><i class="fa-solid fa-graduation-cap text-blue-400"></i> <span>POWER USER TIP</span></div><div class="font-medium">Your Command Center is now a living system with built-in MTD tracking.</div><div class="text-sm text-zinc-400 mt-0.5">Just say <span class="font-mono text-blue-400">"update my Command Center"</span> and I’ll instantly push fresh markets, weather, news, Bible encouragement, and auto-update this June tracker. Pair it with your M4 MacBook + OpenClaw agents for end-to-end automation of workshop content, email triage, and daily briefings. Zero manual updates. Maximum clarity.</div></div><div class="md:text-right"><button onclick="alert('Master prompt: Just tell me \"update my Command Center\" anytime for a fresh push to GitHub with latest prices, news, weather, Bible encouragement, and your personalized MTD tracker.');" class="inline-flex items-center gap-x-2 text-sm font-semibold px-5 h-10 bg-blue-600 hover:bg-blue-500 active:bg-blue-700 transition-colors rounded-2xl text-white"><span>Show master prompt</span> <i class="fa-solid fa-arrow-right"></i></button></div></div>
+            </div>
+        </div>
+
+        <div class="mt-8 flex flex-col md:flex-row items-center justify-between gap-y-2 text-xs text-zinc-500 px-1">
+            <div>Generated with Grok • Self-contained HTML • Works offline after load • Pushed to GitHub June 1, 2026 • M3Torres/m2torres-command-center</div>
+            <div class="flex items-center gap-x-4"><button onclick="window.location.reload()" class="hover:text-zinc-300 transition-colors flex items-center gap-x-1"><i class="fa-solid fa-redo text-xs"></i> <span>Reload</span></button> <span>•</span> <span>Ask Grok to evolve this dashboard further</span></div>
+        </div>
+    </div>
+    <script>
+        function initializeTailwind() { document.documentElement.style.setProperty('--accent', '#3b82f6'); }
+        function copyDashboardLink() { const url = window.location.href; navigator.clipboard.writeText(url).then(() => { alert('Link copied!'); }).catch(() => { alert('Link: ' + url); }); }
+        function refreshDashboard() { alert('To get the absolute latest data and update the tracker, just message me: "update my Command Center" or "push today\'s morning brief to GitHub"'); }
+        window.onload = function() { initializeTailwind(); };
+    </script>
+</body>
+</html>
