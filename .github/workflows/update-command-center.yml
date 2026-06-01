@@ -2,8 +2,8 @@ name: Daily Command Center Update
 
 on:
   schedule:
-    - cron: '30 10 * * *'   # Runs daily at 6:30 AM Eastern Time
-  workflow_dispatch:        # Allows manual trigger from GitHub
+    - cron: '30 10 * * *'   # Runs daily at 6:30 AM Eastern
+  workflow_dispatch:
 
 jobs:
   update-brief:
@@ -15,150 +15,100 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate fresh Command Center brief
+      - name: Generate fresh index.html
         run: |
           DATE=$(date +"%A, %B %d, %Y")
-          
-          # Get St. Cloud, FL weather
-          WEATHER_JSON=$(curl -s "https://api.open-meteo.com/v1/forecast?latitude=28.25&longitude=-81.28&current=temperature_2m&daily=temperature_2m_max,temperature_2m_min&timezone=America/New_York")
-          
-          TEMP=$(echo $WEATHER_JSON | jq '.current.temperature_2m')
-          HIGH=$(echo $WEATHER_JSON | jq '.daily.temperature_2m_max[0]')
-          LOW=$(echo $WEATHER_JSON | jq '.daily.temperature_2m_min[0]')
-          
-          # Create the HTML file
-          cat > index.html << 'HTMLEOF'
+
+          # Fetch St. Cloud weather
+          WEATHER=$(curl -s "https://api.open-meteo.com/v1/forecast?latitude=28.25&longitude=-81.28&current=temperature_2m&daily=temperature_2m_max,temperature_2m_min&timezone=America/New_York")
+
+          TEMP=$(echo "$WEATHER" | jq '.current.temperature_2m')
+          HIGH=$(echo "$WEATHER" | jq '.daily.temperature_2m_max[0]')
+          LOW=$(echo "$WEATHER" | jq '.daily.temperature_2m_min[0]')
+
+          cat > index.html << 'ENDOFFILE'
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M3Torres Command Center • DATE_PLACEHOLDER</title>
+    <title>M3Torres Command Center</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        body { font-family: 'Inter', system_ui, sans-serif; }
-    </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
     <div class="max-w-screen-xl mx-auto p-8">
-        <!-- Header -->
-        <div class="flex items-center justify-between mb-8">
+        <div class="flex justify-between items-center mb-8">
             <div class="flex items-center gap-x-4">
                 <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center">
-                    <span class="text-slate-900 font-bold text-3xl tracking-tighter">M2</span>
+                    <span class="text-slate-900 font-bold text-3xl">M2</span>
                 </div>
                 <div>
-                    <div class="text-3xl font-semibold tracking-tighter">M3Torres</div>
+                    <div class="text-3xl font-semibold">M3Torres</div>
                     <div class="text-sm text-slate-400 -mt-1">Command Center</div>
                 </div>
             </div>
             <div class="text-right">
                 <div class="text-2xl font-semibold">DATE_PLACEHOLDER</div>
-                <div class="text-emerald-400 text-sm">Good morning</div>
             </div>
         </div>
 
         <!-- Markets -->
         <div class="mb-8">
-            <div class="flex items-center gap-x-3 mb-4">
-                <i class="fa-solid fa-chart-line text-emerald-400"></i>
-                <h2 class="text-xl font-semibold">Markets Snapshot</h2>
-            </div>
+            <h2 class="text-xl font-semibold mb-4 flex items-center gap-x-2">
+                <i class="fa-solid fa-chart-line text-emerald-400"></i> Markets Snapshot
+            </h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-5">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <div class="text-sm text-slate-400">Bitcoin (BTC)</div>
-                            <div class="text-3xl font-semibold mt-1">$72,900</div>
-                        </div>
-                        <div class="text-red-400 text-sm font-medium">-1.8%</div>
-                    </div>
+                <div class="bg-slate-900 p-5 rounded-3xl border border-slate-800">
+                    <div class="text-sm text-slate-400">Bitcoin</div>
+                    <div class="text-3xl font-semibold">$72,900 <span class="text-red-400 text-sm">-1.8%</span></div>
                 </div>
-                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-5">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <div class="text-sm text-slate-400">Gold</div>
-                            <div class="text-3xl font-semibold mt-1">$4,510</div>
-                            <div class="text-xs text-slate-500">per oz</div>
-                        </div>
-                        <div class="text-red-400 text-sm font-medium">-0.7%</div>
-                    </div>
+                <div class="bg-slate-900 p-5 rounded-3xl border border-slate-800">
+                    <div class="text-sm text-slate-400">Gold</div>
+                    <div class="text-3xl font-semibold">$4,510 <span class="text-red-400 text-sm">-0.7%</span></div>
                 </div>
-                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-5">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <div class="text-sm text-slate-400">Silver</div>
-                            <div class="text-3xl font-semibold mt-1">$75.70</div>
-                            <div class="text-xs text-slate-500">per oz</div>
-                        </div>
-                        <div class="text-emerald-400 text-sm font-medium">+0.7%</div>
-                    </div>
+                <div class="bg-slate-900 p-5 rounded-3xl border border-slate-800">
+                    <div class="text-sm text-slate-400">Silver</div>
+                    <div class="text-3xl font-semibold">$75.70 <span class="text-emerald-400 text-sm">+0.7%</span></div>
                 </div>
-                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-5">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <div class="text-sm text-slate-400">XRP</div>
-                            <div class="text-3xl font-semibold mt-1">$1.31</div>
-                        </div>
-                        <div class="text-red-400 text-sm font-medium">-1.6%</div>
-                    </div>
+                <div class="bg-slate-900 p-5 rounded-3xl border border-slate-800">
+                    <div class="text-sm text-slate-400">XRP</div>
+                    <div class="text-3xl font-semibold">$1.31 <span class="text-red-400 text-sm">-1.6%</span></div>
                 </div>
             </div>
         </div>
 
         <!-- Weather -->
-        <div class="mb-8">
-            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6">
-                <div class="flex items-center gap-x-3 mb-4">
-                    <i class="fa-solid fa-cloud-sun text-amber-400"></i>
-                    <h3 class="font-semibold">St. Cloud, FL</h3>
-                </div>
-                <div class="flex items-end gap-x-6">
-                    <div>
-                        <div class="text-6xl font-semibold">WEATHER_TEMP°F</div>
-                        <div class="text-slate-400">High WEATHER_HIGH° / Low WEATHER_LOW°</div>
-                    </div>
-                    <div class="text-sm text-slate-400 max-w-xs">
-                        Humid conditions. Chance of afternoon thunderstorms possible.
-                    </div>
-                </div>
-            </div>
+        <div class="bg-slate-900 p-6 rounded-3xl border border-slate-800 mb-8">
+            <h3 class="font-semibold mb-4 flex items-center gap-x-2">
+                <i class="fa-solid fa-cloud-sun text-amber-400"></i> St. Cloud, FL
+            </h3>
+            <div class="text-6xl font-semibold">TEMP_PLACEHOLDER°F</div>
+            <div class="text-slate-400">High HIGH_PLACEHOLDER° / Low LOW_PLACEHOLDER° • Humid with possible storms</div>
         </div>
 
         <!-- Bible Verse -->
-        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 mb-8">
-            <div class="max-w-2xl">
-                <div class="uppercase tracking-[2px] text-xs text-emerald-400 font-semibold mb-2">WORD FOR TODAY</div>
-                <div class="text-2xl leading-snug">
-                    “There is therefore now no condemnation for those who are in Christ Jesus. For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death.”
-                </div>
-                <div class="mt-3 text-slate-400">— Romans 8:1-2 (ESV)</div>
-                <div class="mt-4 text-emerald-300">
-                    Walk in freedom and grace today.
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center text-xs text-slate-500">
-            M3Torres Command Center • Automatically updated daily
+        <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800">
+            <div class="text-emerald-400 text-xs tracking-widest mb-2">WORD FOR TODAY</div>
+            <div class="text-2xl">"There is therefore now no condemnation for those who are in Christ Jesus."</div>
+            <div class="text-slate-400 mt-2">— Romans 8:1</div>
         </div>
     </div>
 </body>
 </html>
-HTMLEOF
+ENDOFFILE
 
           # Replace placeholders
           sed -i "s/DATE_PLACEHOLDER/$DATE/g" index.html
-          sed -i "s/WEATHER_TEMP/$TEMP/g" index.html
-          sed -i "s/WEATHER_HIGH/$HIGH/g" index.html
-          sed -i "s/WEATHER_LOW/$LOW/g" index.html
+          sed -i "s/TEMP_PLACEHOLDER/$TEMP/g" index.html
+          sed -i "s/HIGH_PLACEHOLDER/$HIGH/g" index.html
+          sed -i "s/LOW_PLACEHOLDER/$LOW/g" index.html
 
-          echo "Brief generated for $DATE"
+          echo "✅ Brief generated successfully"
         shell: bash
 
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Daily Command Center Update - $(date +'%Y-%m-%d')"
+          commit_message: "Daily Command Center Update"
           file_pattern: index.html
