@@ -1,1 +1,337 @@
-THE_FULL_CORRECT_HTML_CONTENT_FROM_/tmp/m2torres_command_center.html_HERE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M2 Torres Command Center</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        :root {
+            --primary: #0A66C2;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8fafc;
+            color: #1e2937;
+            line-height: 1.5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #0A66C2, #1e40af);
+            color: white;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+        
+        .date {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin: 0 0 1rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .acquisition-section {
+            grid-column: 1 / -1;
+            background: white;
+            border-radius: 16px;
+            padding: 1.75rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .acquisition-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .status-block {
+            margin-bottom: 1.5rem;
+        }
+        
+        .status-block h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 0 0 0.75rem 0;
+            color: #334155;
+        }
+        
+        .checklist, .action-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .checklist li, .action-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f1e7ff;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        
+        .checklist li:last-child, .action-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .checklist li::before {
+            content: "✅";
+            flex-shrink: 0;
+        }
+        
+        .action-list li {
+            padding-left: 0.25rem;
+        }
+        
+        .meta {
+            font-size: 0.75rem;
+            color: #64748b;
+            margin-top: 0.25rem;
+            display: block;
+        }
+        
+        .last-updated {
+            font-size: 0.75rem;
+            color: #64748b;
+            text-align: right;
+            margin-top: 1rem;
+        }
+        
+        .market-value {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #0f172a;
+        }
+        
+        .change {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .positive { color: #16a34a; }
+        .negative { color: #dc2626; }
+        
+        .bible {
+            font-style: italic;
+            color: #475569;
+            border-left: 4px solid #0A66C2;
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <h1>M2 Torres Command Center</h1>
+            <div class="date">Monday, June 08, 2026 • St. Cloud, Florida</div>
+        </div>
+        <div style="text-align: right;">
+            <div style="font-size: 0.85rem; opacity: 0.85;">M2 Torres Government Services</div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Acquisition Training Readiness - NEW PROMINENT SECTION -->
+        <div class="acquisition-section">
+            <div class="acquisition-header">
+                <div>
+                    <h2 style="margin: 0; font-size: 1.35rem; color: #0A66C2;">Acquisition Training Readiness</h2>
+                    <p style="margin: 0.25rem 0 0 0; color: #64748b; font-size: 0.9rem;">Summer 2026 Workshops • D-102 Aligned</p>
+                </div>
+                <div style="text-align: right;">
+                    <div style="font-size: 0.8rem; color: #64748b;">Primary Target</div>
+                    <div style="font-weight: 600; color: #0A66C2;">4 August • Introduction to Acquisition</div>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div style="margin-bottom: 1.5rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                    <div style="font-weight: 600; color: #334155; font-size: 0.95rem;">Introduction to Acquisition Readiness</div>
+                    <div style="font-weight: 700; color: #0A66C2; font-size: 1.05rem;">42%</div>
+                </div>
+                <div style="background: #e2e8f0; border-radius: 9999px; height: 12px; overflow: hidden; box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.05);">
+                    <div style="background: linear-gradient(to right, #0A66C2, #1e40af); height: 100%; width: 42%; transition: width 0.4s ease; border-radius: 9999px;"></div>
+                </div>
+                <div style="font-size: 0.75rem; color: #64748b; margin-top: 0.35rem; text-align: right;">Speaker notes complete • Reviews in progress</div>
+            </div>
+
+            <!-- Accomplished -->
+            <div class="status-block">
+                <h3>✅ What I Have Accomplished</h3>
+                <ul class="checklist">
+                    <li>Created dedicated Teams folder with latest workshop PPTs for review and updates</li>
+                    <li>Built and proposed full Summer 2026 Acquisition Workshops schedule</li>
+                    <li>Completed speaker notes for all workshops</li>
+                    <li>Christopher Bearden reviewed Intro to Systems Engineering and Intermediate Systems Engineering for new material compliance</li>
+                    <li>Tasked Christopher to review remaining workshops (Risk, T&E, Requirements, Cybersecurity, TSAAM Overview)</li>
+                </ul>
+            </div>
+
+            <!-- Remaining -->
+            <div class="status-block">
+                <h3>📌 What Is Left to Do (Prioritized)</h3>
+                <ul class="action-list">
+                    <li>
+                        <strong>High Priority – This Week (by 13 Jun)</strong><br>
+                        Validate Introduction to Acquisition speaker notes against D-102 pathways, ALF PDPs, and 8-Step process
+                        <span class="meta">Owner: You • Target: 13 Jun</span>
+                    </li>
+                    <li>
+                        <strong>High Priority – This Week</strong><br>
+                        Confirm with Christopher that Introduction to Acquisition is his top review priority
+                        <span class="meta">Owner: You • Target: 11 Jun</span>
+                    </li>
+                    <li>
+                        <strong>High Priority – by 20 Jun</strong><br>
+                        Incorporate Christopher’s feedback on Introduction to Acquisition notes
+                        <span class="meta">Owner: You • Target: 20 Jun (MSR milestone)</span>
+                    </li>
+                    <li>
+                        <strong>Medium Priority – by 20 Jun</strong><br>
+                        Begin coordination with John Gatewood on emphasis areas for 4 August workshop
+                        <span class="meta">Owner: You</span>
+                    </li>
+                    <li>
+                        <strong>Ongoing</strong><br>
+                        Update tracking tool with current status (Speaker Notes complete, Christopher review in progress)
+                        <span class="meta">Owner: You</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="last-updated">Last Updated: June 8, 2026 • Next Review: Daily</div>
+        </div>
+
+        <!-- Markets + Weather Row -->
+        <div class="grid">
+            <!-- Markets -->
+            <div class="card">
+                <h3 class="section-title">📈 Markets</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <div style="font-size: 0.8rem; color: #64748b;">Bitcoin (BTC)</div>
+                        <div class="market-value">$XX,XXX</div>
+                        <div class="change positive">+X.XX%</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.8rem; color: #64748b;">Gold</div>
+                        <div class="market-value">$X,XXX</div>
+                        <div class="change negative">-X.XX%</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.8rem; color: #64748b;">Silver</div>
+                        <div class="market-value">$XX.XX</div>
+                        <div class="change positive">+X.XX%</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.8rem; color: #64748b;">XRP</div>
+                        <div class="market-value">$X.XX</div>
+                        <div class="change positive">+X.XX%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weather -->
+            <div class="card">
+                <h3 class="section-title">🌤️ St. Cloud, FL Weather</h3>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div style="font-size: 2.5rem; font-weight: 600;">XX°</div>
+                    <div>
+                        <div>Mostly Sunny</div>
+                        <div style="font-size: 0.85rem; color: #64748b;">High: XX° • Low: XX°</div>
+                        <div style="font-size: 0.8rem; color: #64748b; margin-top: 0.25rem;">Humidity: XX% • Wind: X mph</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Headlines -->
+        <div class="card">
+            <h3 class="section-title">📰 Key Headlines</h3>
+            <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.95rem;">
+                <li>DHS releases updated acquisition pathway guidance (D-102 Rev 4)</li>
+                <li>TSA continues implementation of 8-Step Demonstration and Transition Process</li>
+                <li>Bitcoin and precious metals markets show continued volatility</li>
+                <li>Federal acquisition workforce training requirements under review</li>
+            </ul>
+        </div>
+
+        <!-- Bible Verse + Encouragement -->
+        <div class="card">
+            <h3 class="section-title">📖 Scripture & Encouragement</h3>
+            <div class="bible">
+                “For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future.”<br>
+                — Jeremiah 29:11
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.95rem; color: #475569;">
+                God is good — even in the middle of tight deadlines and shifting requirements. Keep pressing forward with excellence.
+            </p>
+        </div>
+
+        <!-- Power User Tips -->
+        <div class="card">
+            <h3 class="section-title">💡 Power User Tips</h3>
+            <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.95rem;">
+                <li>Use the new D-102 pathways as a lens when updating all workshop content</li>
+                <li>Keep your tracking tool updated daily — it becomes your single source of truth</li>
+                <li>Document decisions and feedback in the Teams folder for future reference</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        // Simple auto-refresh note (optional)
+        console.log('%c[M2 Torres Command Center] Dashboard loaded successfully.', 'color:#64748b');
+    </script>
+</body>
+</html>
