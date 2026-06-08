@@ -15,183 +15,40 @@
 </head>
 <body class="bg-slate-950 text-slate-200">
     <div class="max-w-screen-xl mx-auto p-6">
-        <!-- Header -->
+        <!-- Header with Correct Logo -->
         <div class="flex items-center justify-between mb-8">
             <div class="flex items-center gap-x-4">
                 <div class="flex items-center gap-x-3">
-                    <svg width="48" height="48" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="60" cy="60" r="54" fill="#0f172a" stroke="#64748b" stroke-width="6"/>
-                        <path d="M12 60 Q 30 30, 60 12 Q 90 30, 108 60 Q 90 90, 60 108 Q 30 90, 12 60" fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="6 6"/>
-                        <path d="M32 78 L32 38 L42 38 L42 58 L52 38 L62 58 L62 38 L72 38 L72 78" fill="none" stroke="#e2e8f0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M78 42 Q 85 38, 92 42 Q 95 48, 88 54 Q 82 58, 78 62 Q 85 66, 92 70" fill="none" stroke="#f87171" stroke-width="5" stroke-linecap="round"/>
-                        <text x="78" y="78" font-family="Inter, system-ui" font-size="12" font-weight="700" fill="#f87171">2</text>
-                    </svg>
-                    <div>
-                        <div class="text-2xl font-bold tracking-tighter">M2 TORRES</div>
-                        <div class="text-[10px] text-slate-400 -mt-1 tracking-[2px]">COMMAND CENTER</div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-right">
-                <div class="text-sm text-slate-400">Monday, June 08, 2026</div>
-                <div class="text-xs text-emerald-400">Morning Brief • Fresh</div>
-            </div>
-        </div>
-
-        <!-- Markets -->
-        <div class="mb-8">
-            <div class="section-header font-semibold mb-3 flex items-center gap-x-2">
-                <i class="fa-solid fa-chart-line text-emerald-400"></i>
-                <span>MARKETS</span>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="metric-card bg-slate-900 border border-slate-800 rounded-2xl p-5">
-                    <div class="text-xs text-slate-400">BITCOIN (BTC)</div>
-                    <div class="text-3xl font-semibold mt-1">$63,420</div>
-                    <div class="text-emerald-400 text-sm mt-1">+1.2% <span class="text-slate-500">24h</span></div>
-                </div>
-                <div class="metric-card bg-slate-900 border border-slate-800 rounded-2xl p-5">
-                    <div class="text-xs text-slate-400">XRP</div>
-                    <div class="text-3xl font-semibold mt-1">$1.145</div>
-                    <div class="text-emerald-400 text-sm mt-1">+2.0% <span class="text-slate-500">24h</span></div>
-                </div>
-                <div class="metric-card bg-slate-900 border border-slate-800 rounded-2xl p-5">
-                    <div class="text-xs text-slate-400">GOLD</div>
-                    <div class="text-3xl font-semibold mt-1">$4,320/oz</div>
-                    <div class="text-red-400 text-sm mt-1">-0.8% <span class="text-slate-500">24h</span></div>
-                </div>
-                <div class="metric-card bg-slate-900 border border-slate-800 rounded-2xl p-5">
-                    <div class="text-xs text-slate-400">SILVER</div>
-                    <div class="text-3xl font-semibold mt-1">$67.50/oz</div>
-                    <div class="text-red-400 text-sm mt-1">-1.2% <span class="text-slate-500">24h</span></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Weather + Bible -->
-        <div class="grid md:grid-cols-2 gap-6 mb-8">
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <div class="text-xs text-slate-400">ST. CLOUD, FL</div>
-                        <div class="text-4xl font-semibold mt-1">87°</div>
-                        <div class="text-sm text-slate-400">Partly cloudy • High 93°</div>
-                    </div>
-                    <i class="fa-solid fa-cloud-sun text-5xl text-amber-400 opacity-80"></i>
-                </div>
-            </div>
-
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-                <div class="text-xs text-slate-400 mb-2">ENCOURAGEMENT</div>
-                <div class="italic text-lg leading-snug">
-                    “May the favor of the Lord our God rest on us; establish the work of our hands for us — yes, establish the work of our hands.”
-                </div>
-                <div class="text-xs text-slate-500 mt-3">— Psalm 90:17</div>
-            </div>
-        </div>
-
-        <!-- Headlines -->
-        <div class="mb-8">
-            <div class="section-header font-semibold mb-3">KEY HEADLINES</div>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 text-sm">
-                    <div class="font-medium text-emerald-400 mb-1">ACQUISITION / FEDERAL</div>
-                    <ul class="space-y-1.5 text-slate-300 text-sm">
-                        <li>• DHS contract reviews & funding uncertainty impacting contractors</li>
-                        <li>• New FAR cases and acquisition pathway updates under DHS Directive 102-01 (Rev 4)</li>
-                        <li>• TSA RFI slowdowns reported; focus on existing vehicles</li>
-                    </ul>
-                </div>
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 text-sm">
-                    <div class="font-medium text-emerald-400 mb-1">INVESTING &amp; MARKETS</div>
-                    <ul class="space-y-1.5 text-slate-300 text-sm">
-                        <li>• Crypto spot ETFs driving institutional flows (BTC, ETH, XRP)</li>
-                        <li>• Precious metals in historic rally; analysts flag potential 2026 crypto outperformance</li>
-                        <li>• XRP rebounding on utility focus and short interest</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Month-to-Date Tracker -->
-        <div class="mb-8">
-            <div class="section-header font-semibold mb-4 flex items-center justify-between">
-                <span>MONTH-TO-DATE TASK &amp; ACCOMPLISHMENT TRACKER — JUNE 2026</span>
-                <span class="text-xs px-3 py-1 bg-emerald-900 text-emerald-400 rounded-full">Updated Today</span>
-            </div>
-
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
-                <table class="w-full text-sm">
-                    <thead class="bg-slate-950 text-slate-400">
-                        <tr>
-                            <th class="text-left px-6 py-3 font-normal">Date</th>
-                            <th class="text-left px-6 py-3 font-normal">Task / Accomplishment</th>
-                            <th class="text-left px-6 py-3 font-normal">Category</th>
-                            <th class="text-left px-6 py-3 font-normal">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-800">
-                        <tr class="hover:bg-slate-950">
-                            <td class="px-6 py-4 text-emerald-400">Jun 8</td>
-                            <td class="px-6 py-4">Pushed fresh Command Center + Blog page to GitHub; resolved Vercel connection</td>
-                            <td class="px-6 py-4"><span class="px-2.5 py-0.5 text-xs bg-blue-900 text-blue-400 rounded">Command Center</span></td>
-                            <td class="px-6 py-4"><span class="text-emerald-400">Completed</span></td>
-                        </tr>
-                        <tr class="hover:bg-slate-950">
-                            <td class="px-6 py-4 text-emerald-400">Jun 8</td>
-                            <td class="px-6 py-4">Added dedicated Blog &amp; Resources page (blog.html) to m2torres.com</td>
-                            <td class="px-6 py-4"><span class="px-2.5 py-0.5 text-xs bg-violet-900 text-violet-400 rounded">Website</span></td>
-                            <td class="px-6 py-4"><span class="text-emerald-400">Completed</span></td>
-                        </tr>
-                        <tr class="hover:bg-slate-950">
-                            <td class="px-6 py-4">Jun 7</td>
-                            <td class="px-6 py-4">Finalized TSA workshop scripts &amp; status report for APM contract</td>
-                            <td class="px-6 py-4"><span class="px-2.5 py-0.5 text-xs bg-amber-900 text-amber-400 rounded">Professional</span></td>
-                            <td class="px-6 py-4"><span class="text-emerald-400">Completed</span></td>
-                        </tr>
-                        <tr class="hover:bg-slate-950">
-                            <td class="px-6 py-4">Jun 5</td>
-                            <td class="px-6 py-4">Delivered acquisition training session + prepared new Directive 102-01 content</td>
-                            <td class="px-6 py-4"><span class="px-2.5 py-0.5 text-xs bg-amber-900 text-amber-400 rounded">Professional</span></td>
-                            <td class="px-6 py-4"><span class="text-emerald-400">Completed</span></td>
-                        </tr>
-                        <tr class="hover:bg-slate-950">
-                            <td class="px-6 py-4">Jun 3</td>
-                            <td class="px-6 py-4">Family time with grandson Mateo + home improvement planning (sauna circuit)</td>
-                            <td class="px-6 py-4"><span class="px-2.5 py-0.5 text-xs bg-pink-900 text-pink-400 rounded">Family</span></td>
-                            <td class="px-6 py-4"><span class="text-emerald-400">Completed</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <!-- Power User Tips -->
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-            <div class="section-header font-semibold mb-4">POWER USER TIPS</div>
-            <div class="grid md:grid-cols-2 gap-x-8 gap-y-3 text-sm">
-                <div class="flex gap-x-3">
-                    <i class="fa-solid fa-robot text-emerald-400 mt-1"></i>
-                    <div>Continue refining OpenClaw local AI agent on your M4 MacBook for email automation and workshop scripting.</div>
-                </div>
-                <div class="flex gap-x-3">
-                    <i class="fa-solid fa-bell text-emerald-400 mt-1"></i>
-                    <div>Set price alerts for silver/gold + crypto portfolio tracking to stay on top of moves.</div>
-                </div>
-                <div class="flex gap-x-3">
-                    <i class="fa-solid fa-users text-emerald-400 mt-1"></i>
-                    <div>Block time this week for family (grandson Mateo) while protecting deep work blocks for training delivery.</div>
-                </div>
-                <div class="flex gap-x-3">
-                    <i class="fa-solid fa-graduation-cap text-emerald-400 mt-1"></i>
-                    <div>Prepare speaker notes for the new Directive 102-01 pathways workshop (4 new acquisition routes).</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-8 text-center text-xs text-slate-500">
-            God is good • Command Center auto-refreshed • Next brief on your command
-        </div>
-    </div>
-</body>
-</html>
+                    <img src="data:image/png;base64,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
+zwn4rp3rbFZwzZzun2E4QGBGQQ89+vOodAnZ
