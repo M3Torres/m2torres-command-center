@@ -3,67 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M2 Torres Command Center - 2026-06-26</title>
+    <title>M2 Torres Command Center - 2026-06-30</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; color: #333; }
-        header { text-align: center; padding: 20px; background: #002b5e; color: white; }
-        .section { margin: 20px 0; padding: 15px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        body { font-family: Arial, system-ui, sans-serif; margin: 20px; background: #f4f4f4; color: #333; line-height: 1.5; }
+        header { background: #002b5e; color: white; padding: 20px; text-align: center; border-radius: 8px; margin-bottom: 20px; }
+        .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1, h2 { margin-top: 0; color: #002b5e; }
         table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
-        .positive { color: green; }
-        .negative { color: red; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #f8f9fa; font-weight: 600; }
+        .positive { color: #16a34a; font-weight: 600; }
+        .negative { color: #dc2626; font-weight: 600; }
+        ul { padding-left: 20px; }
+        .tracker-table td, .tracker-table th { font-size: 0.9rem; }
+        .status-complete { background: #dcfce7; color: #166534; padding: 2px 8px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
+        footer { text-align: center; color: #666; font-size: 0.85rem; margin-top: 30px; }
     </style>
 </head>
 <body>
     <header>
-        <h1>M2 Torres Government Services Command Center</h1>
-        <p>Friday, June 26, 2026 | Acquisition + Investing Dashboard</p>
-        <!-- Logo Placeholder: Replace src with your logo.png -->
-        <img src="logo.png" alt="M2 Torres Logo" style="max-height: 80px;">
+        <img src="logo.png" alt="M2 Torres Logo" style="max-height: 70px; margin-bottom: 10px;">
+        <h1 style="margin: 0; font-size: 28px;">M2 Torres Government Services Command Center</h1>
+        <p style="margin: 8px 0 0; opacity: 0.9;">Tuesday, June 30, 2026 • Acquisition + Investing Dashboard</p>
     </header>
 
+    <!-- Markets Snapshot -->
     <div class="section">
         <h2>Markets Snapshot</h2>
         <table>
-            <tr><th>Asset</th><th>Price (USD)</th><th>24h Change</th></tr>
-            <tr><td>Bitcoin (BTC)</td><td>~$60,000</td><td class="mixed">~0% to +1.5% (volatile)</td></tr>
-            <tr><td>Gold</td><td>~$4,080/oz</td><td class="positive">+1.5–1.7%</td></tr>
-            <tr><td>Silver</td><td>~$59/oz</td><td class="positive">+2–3%</td></tr>
-            <tr><td>XRP</td><td>~$1.04</td><td class="positive">+0.3–1.6%</td></tr>
+            <thead>
+                <tr>
+                    <th>Asset</th>
+                    <th>Price (USD)</th>
+                    <th>24h / Recent Change</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Bitcoin (BTC)</strong></td>
+                    <td>~$58,500</td>
+                    <td class="negative">-2.8% (volatile, testing support)</td>
+                </tr>
+                <tr>
+                    <td><strong>Gold</strong></td>
+                    <td>~$4,020 / oz</td>
+                    <td class="positive">+0.1% (stable hedge)</td>
+                </tr>
+                <tr>
+                    <td><strong>Silver</strong></td>
+                    <td>~$58.80 / oz</td>
+                    <td class="positive">+0.6%</td>
+                </tr>
+                <tr>
+                    <td><strong>XRP</strong></td>
+                    <td>~$1.05</td>
+                    <td class="positive">+0.9%</td>
+                </tr>
+            </tbody>
         </table>
+        <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Precious metals providing resilience amid crypto volatility. Monitor COMEX and regulatory developments.</p>
     </div>
 
+    <!-- St. Cloud, FL Weather -->
     <div class="section">
         <h2>St. Cloud, FL Weather</h2>
-        <p>Highs near 93–96°F with afternoon thunderstorms possible (40–60% chance). Lows ~73–76°F. Humid conditions persist.</p>
+        <p><strong>Today:</strong> High 91–94°F, partly sunny with showers and thunderstorms likely in the afternoon (60–70% chance). Low ~75°F. Humid with heat index near 100°F.</p>
+        <p style="font-size: 0.9rem;">Typical Central Florida summer pattern. Outdoor sauna electrical work should account for afternoon storms.</p>
     </div>
 
+    <!-- Key Headlines -->
     <div class="section">
         <h2>Key Headlines</h2>
         <ul>
-            <li>DHS/TSA acquisition focus on D-102 pathways, 8-Step Process, and tailored ALF implementation continues.</li>
-            <li>Markets show mixed risk sentiment; precious metals resilient amid volatility.</li>
-            <li>Ongoing emphasis on cybersecurity, risk management, and efficient capability delivery per TSAAM.</li>
+            <li>DHS/TSA acquisition training rollout continues under Directive 102-01 (Rev 4) and TSAAM v4.3.2 — focus on new pathways, risk management, and T&E integration.</li>
+            <li>Precious metals and Bitcoin mining equities (incl. ABTC holdings) remain in focus as portfolio diversifiers amid macro uncertainty.</li>
+            <li>Federal cybersecurity, Section 508 compliance, and acquisition workforce development remain priority areas for TSA APM support.</li>
+            <li>Real estate and tax lien monitoring in Central Florida (Osceola/Orange County) ongoing for potential opportunities.</li>
         </ul>
     </div>
 
+    <!-- Bible Verse + Encouragement -->
     <div class="section">
         <h2>Bible Verse + Encouragement</h2>
-        <p><strong>Psalm 28:7</strong> – "The Lord is my strength and my shield; my heart trusts in him, and he helps me. My heart leaps for joy..."</p>
-        <p>Stay steady in your work—faithful execution in acquisition programs brings lasting impact. God equips you for the tasks ahead.</p>
+        <p><strong>Isaiah 41:10</strong> — “So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.”</p>
+        <p style="color: #444;">In seasons of building — both professionally with the new website launch and personally with family and home projects — remember that faithful, steady work is seen and strengthened by the Lord. Keep pressing forward with excellence.</p>
     </div>
 
+    <!-- Power User Tips -->
     <div class="section">
         <h2>Power User Tips</h2>
         <ul>
-            <li>Update Risk Registry weekly; track triggers for upcoming reviews.</li>
-            <li>Align TEMP/PMP with baselines before technical reviews.</li>
-            <li>Prep speaker notes with D-102/8-Step integration for workshops.</li>
+            <li>Continue refining TSA Intro to Acquisition and T&E workshop speaker scripts for Q3 delivery cadence.</li>
+            <li>Update risk registry and monitor triggers ahead of upcoming ARB/ART reviews.</li>
+            <li>Align new m2torres.com website content with capability statement for consistent messaging in proposals and outreach.</li>
+            <li>Monitor silver/gold dips for stacking opportunities; review ABTC position alongside broader crypto allocation.</li>
         </ul>
     </div>
 
-    <footer style="text-align: center; margin-top: 30px; color: #666;">
-        <p>Generated for Marcos Torres | M2 Torres Government Services</p>
+    <!-- Month-to-Date Task & Accomplishment Tracker -->
+    <div class="section">
+        <h2>Month-to-Date Task & Accomplishment Tracker — June 2026</h2>
+        <p style="font-size: 0.9rem; color: #555;">Dedicated tracking for professional, business development, and Command Center activities.</p>
+        
+        <table class="tracker-table" style="margin-top: 12px;">
+            <thead>
+                <tr>
+                    <th style="width: 110px;">Date</th>
+                    <th>Task / Accomplishment</th>
+                    <th>Status</th>
+                    <th>Notes / Impact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>June 30</strong></td>
+                    <td><strong>Updated M2 Torres LLC professional website</strong> with complete firm credentials table (SAM UEI F2L3JZJC76F5, DUNS 139112431, CAGE 12PJ7, full NAICS, socio-economic status) and refreshed capabilities/leadership content. Pushed live to GitHub (M3Torres/m2torres-website) and prepared for Vercel deployment.</td>
+                    <td><span class="status-complete">COMPLETE</span></td>
+                    <td>Modern Tailwind design, SVG checkered logo, prominent credentials section, mobile responsive, linked to existing capability brochure PDF. Directly fulfills client request for website update.</td>
+                </tr>
+                <tr>
+                    <td>June 26–29</td>
+                    <td>Command Center morning brief maintenance & fresh data pushes</td>
+                    <td><span class="status-complete">COMPLETE</span></td>
+                    <td>Multiple daily updates with markets, weather, headlines, and Bible encouragement. No stale content.</td>
+                </tr>
+                <tr>
+                    <td>June 2026 (ongoing)</td>
+                    <td>TSA APM contract support — workshop facilitation, content development (D-102, Risk, T&E, Section 508, cyber scenarios)</td>
+                    <td><span class="status-complete">IN PROGRESS</span></td>
+                    <td>~30-36 workshops/year target. Speaker scripts and status reporting ongoing.</td>
+                </tr>
+                <tr>
+                    <td>June 2026</td>
+                    <td>Business development & LLC administration (m2torres.com, SAM.gov, tax/compliance)</td>
+                    <td><span class="status-complete">ONGOING</span></td>
+                    <td>Website refresh is key milestone. Continued monitoring of opportunities aligned with NAICS and socio-economic advantages.</td>
+                </tr>
+                <tr>
+                    <td>June 2026</td>
+                    <td>Personal / family financial planning (precious metals gifting considerations, home improvements including sauna electrical)</td>
+                    <td><span class="status-complete">ONGOING</span></td>
+                    <td>Researching IRS valuation, gift tax limits, and 240V/50A circuit + panel upgrade planning.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid #eee; font-size: 0.85rem;">
+            <strong>Dedicated section for Morning Brief / GitHub Command Center updates:</strong><br>
+            • June 30, 2026: Fresh markets (BTC ~$58.5k, Gold ~$4,020, Silver ~$58.80, XRP ~$1.05), St. Cloud weather, acquisition-focused headlines, Isaiah 41:10 encouragement, and this new Month-to-Date Tracker added. Pushed automatically via connected GitHub integration to M3Torres/m2torres-command-center.
+        </div>
+    </div>
+
+    <footer>
+        Generated for Marcos Torres | M2 Torres Government Services • Tuesday, June 30, 2026 • Fresh data • No stale content
     </footer>
 </body>
 </html>
