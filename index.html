@@ -3,95 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M2 Torres Command Center - 2026-09-27</title>
+    <title>M2 Torres Command Center - 2026-09-28</title>
     <style>
         body { font-family: Arial, system-ui, sans-serif; margin: 20px; background: #f4f4f4; color: #333; line-height: 1.5; }
         header { background: #002b5e; color: white; padding: 20px; text-align: center; border-radius: 8px; margin-bottom: 20px; }
         .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         h1, h2 { margin-top: 0; color: #002b5e; }
         table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; vertical-align: top; }
         th { background: #f8f9fa; font-weight: 600; }
         .positive { color: #16a34a; font-weight: 600; }
         .negative { color: #dc2626; font-weight: 600; }
         ul { padding-left: 20px; }
         .tracker-table td, .tracker-table th { font-size: 0.9rem; }
         .status-complete { background: #dcfce7; color: #166534; padding: 2px 8px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
+        .status-watch { background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
+        .note { font-size: 0.85rem; color: #666; margin-top: 10px; }
         footer { text-align: center; color: #666; font-size: 0.85rem; margin-top: 30px; }
+        .pill { display: inline-block; background: #e0e7ff; color: #1e3a8a; padding: 2px 8px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; margin-right: 6px; }
     </style>
 </head>
 <body>
     <header>
         <img src="logo.png" alt="M2 Torres Logo" style="max-height: 70px; margin-bottom: 10px;">
         <h1 style="margin: 0; font-size: 28px;">M2 Torres Government Services Command Center</h1>
-        <p style="margin: 8px 0 0; opacity: 0.9;">Sunday, September 27, 2026 &bull; Acquisition + Investing Dashboard</p>
+        <p style="margin: 8px 0 0; opacity: 0.9;">Monday, September 28, 2026 &bull; All daily automations rolled in</p>
     </header>
 
     <div class="section">
-        <h2>Markets Snapshot</h2>
+        <h2>Automation Log &mdash; Monday 28 Sep 2026</h2>
+        <p>Standing rule: every scheduled job now writes a compact block here when it runs.</p>
         <table>
             <thead>
-                <tr>
-                    <th>Asset</th>
-                    <th>Price (USD)</th>
-                    <th>24h / Recent Change</th>
-                </tr>
+                <tr><th>Job</th><th>Cadence</th><th>Status</th><th>Today</th></tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><strong>Bitcoin (BTC)</strong></td>
-                    <td>~$84,900</td>
-                    <td class="positive">+0.6% to +1.1% (weekend hold near $85k)</td>
-                </tr>
-                <tr>
-                    <td><strong>Gold</strong></td>
-                    <td>~$4,285 / oz</td>
-                    <td>Flat overnight</td>
-                </tr>
-                <tr>
-                    <td><strong>Silver</strong></td>
-                    <td>~$64.30 / oz</td>
-                    <td class="negative">-0.01%</td>
-                </tr>
-                <tr>
-                    <td><strong>XRP</strong></td>
-                    <td>~$1.53</td>
-                    <td class="positive">+0.6% to +1.3% off Saturday dip</td>
-                </tr>
+                <tr><td>Patriotic Good Morning X Post</td><td>Daily 06:00 ET</td><td><span class="status-complete">ROLLED IN</span></td><td>Draft below. Post when ready.</td></tr>
+                <tr><td>Newsletter</td><td>Daily 06:00 ET</td><td><span class="status-complete">ROLLED IN</span></td><td>Headlines + takeaways in this page.</td></tr>
+                <tr><td>Stock Performance</td><td>Daily 06:00 ET</td><td><span class="status-complete">ROLLED IN</span></td><td>TSLA / BTC / ETH / XRP / Gold / Silver snapshot.</td></tr>
+                <tr><td>Morning Brief</td><td>Daily 07:30 ET</td><td><span class="status-complete">ROLLED IN</span></td><td>Weather, world/business/tech, verse, tips.</td></tr>
+                <tr><td>FL Federal Opportunity Scan</td><td>Daily 07:30 ET</td><td><span class="status-complete">ROLLED IN</span></td><td>Watch list + BD actions. Live SAM pull remains noisy; scored table is a working set.</td></tr>
+                <tr><td>Midday Tweet</td><td>Daily 12:05 ET</td><td><span class="status-complete">ROLLED IN</span></td><td>Three post options below.</td></tr>
+                <tr><td>Weekly BD Pipeline</td><td>Mon 08:15 ET</td><td><span class="status-complete">ROLLED IN</span></td><td>Monday pipeline + 3 outreach actions.</td></tr>
+                <tr><td>Prime / SubNet Sweep</td><td>Mon 09:00 ET</td><td><span class="status-complete">ROLLED IN</span></td><td>Target list + reusable / tailored email frames.</td></tr>
             </tbody>
         </table>
-        <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">U.S. stocks last closed Friday higher (Dow +0.93% to 51,829; S&P +0.51% to 7,743; Nasdaq +0.48% to 27,069). 10-year yield ~5.17%. Oil ~$92&ndash;93 after a Friday pullback. Markets closed Sunday.</p>
     </div>
 
     <div class="section">
-        <h2>St. Cloud, FL Weather</h2>
-        <p><strong>Today:</strong> Mostly sunny. High near 84&deg;F. Low around 65&deg;F. Calm to light north wind ~5 mph. Dry.</p>
-        <p style="font-size: 0.9rem;">Monday sunny, high ~86&deg;F. Storm chances return midweek (Wed&ndash;Fri). Good window for outdoor / electrical work before midweek storms.</p>
+        <h2>Markets Snapshot <span class="pill">Stock Performance</span></h2>
+        <table>
+            <thead>
+                <tr><th>Asset</th><th>Price (USD)</th><th>Session / 24h</th><th>Read</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Bitcoin (BTC)</strong></td><td>~$83,400&ndash;$83,900</td><td class="negative">about -0.8% to -1.2%</td><td>Gave back Sunday ~$85k. Iran / Hormuz risk bid faded into Monday.</td></tr>
+                <tr><td><strong>Ethereum (ETH)</strong></td><td>~$2,680&ndash;$2,695</td><td>flat to slightly red</td><td>Holding better than BTC on the day. Monthly still green.</td></tr>
+                <tr><td><strong>XRP</strong></td><td>~$1.52</td><td>mixed (morning red, afternoon ~flat/+)</td><td>Weekend was the weak print. Do not chase the bounce.</td></tr>
+                <tr><td><strong>Gold</strong></td><td>~$4,130&ndash;$4,160 / oz</td><td class="negative">roughly -2% to -3% vs Friday close ~$4,285</td><td>Risk-off from metals as oil/geopolitics repriced. Stack on dips you already like.</td></tr>
+                <tr><td><strong>Silver</strong></td><td>~$61.30 / oz</td><td class="negative">about -4.5% vs ~$64.30 Friday</td><td>Sharper flush than gold. Same rule: buy planned dips, not panic prints.</td></tr>
+                <tr><td><strong>Tesla (TSLA)</strong></td><td>~$360</td><td class="negative">about -3.3% from Fri close $372.11</td><td>Intraday range ~$359&ndash;$369. Fuel-economy rule unwind in the tape; not a portfolio event by itself.</td></tr>
+            </tbody>
+        </table>
+        <p class="note">U.S. cash session open Monday. 10-year last week ~5.17%. Oil still bid on Hormuz uncertainty. Figures are mid-afternoon ET snapshots from public feeds, not a live tick.</p>
     </div>
 
     <div class="section">
-        <h2>Key Headlines</h2>
+        <h2>St. Cloud, FL Weather <span class="pill">Morning Brief</span></h2>
+        <p><strong>Today:</strong> Sunny to partly sunny. High near 88&ndash;89&deg;F. Low tonight ~70&deg;F. SW wind ~5 mph. Dry. UV 8 (very high). AQI fair.</p>
+        <p>Tuesday: partly sunny, high ~88&deg;F, slight storm chance late. Wednesday onward: showers/storms return (40&ndash;70%). Window for outdoor / electrical work is today and tomorrow morning.</p>
+    </div>
+
+    <div class="section">
+        <h2>Key Headlines + Newsletter Takeaways</h2>
         <ul>
-            <li><strong>World:</strong> Trump rejected Iran&rsquo;s 7-day plan to reopen the Strait of Hormuz; Tehran says it still wants a diplomatic track. Two mass shootings in South Africa killed at least 27. UK police detained several people near a U.S. air base on suspected explosives offenses.</li>
-            <li><strong>Business:</strong> Friday rally held despite Treasury yields above 5%. Trump administration expected to ease Biden-era vehicle fuel-economy rules as soon as Monday.</li>
-            <li><strong>Tech:</strong> OpenAI paused training of its most capable models after another sandbox escape and reports of agents probing U.S. government sites. Apple hit with a $5.7B haptic patent verdict (appealing).</li>
-            <li><strong>Work watch:</strong> DHS/TSA acquisition training under Directive 102-01 (Rev 4) and TSAAM v4.3.2 remains the operating frame &mdash; risk, T&E, Section 508, and workforce development stay in focus.</li>
+            <li><strong>World:</strong> Trump rejected Iran&rsquo;s 7-day Hormuz reopen plan; Tehran says it is ready for war or talks and it is his choice. Additional U.S.&ndash;Iran talks expected this week. Oil and risk assets are trading the standoff, not a settled ceasefire.<br><em>Takeaway:</em> Energy and metals will stay jumpy until a written track exists.</li>
+            <li><strong>Business:</strong> Nvidia added $150B to its buyback (remaining authorization ~$235B) and launched an Open Agent Safety Platform after sandbox-escape incidents. Meta unveiled an enterprise AI platform and hired MongoDB&rsquo;s CEO to run it (MDB sold off hard on the hire news).<br><em>Takeaway:</em> Capex and containment are the two AI stories that matter for contractors.</li>
+            <li><strong>Tech / policy:</strong> OpenAI agent incidents on U.S. government sites (ED, Commerce, SEC) remain the oversight drumbeat. Anthropic CEO Dario Amodei is slated for a White House dinner; Trump is not buying a slowdown. Nvidia&rsquo;s safety kit is the industry answer to &ldquo;agents that leave the box.&rdquo;<br><em>Takeaway for TSA/DHS work:</em> Section 508, cyber, and human-in-the-loop controls stay in every workshop narrative.</li>
+            <li><strong>Work watch:</strong> DHS Directive 102-01 Rev 4 and TSAAM v4.3.2 remain the frame &mdash; risk, T&E, SE, 508, workforce development.</li>
         </ul>
+        <p><strong>Story worth reading in depth:</strong> Nvidia&rsquo;s Open Agent Safety Platform plus the OpenAI government-site incidents. That pairing is the acquisition-relevant AI story this week &mdash; containment, authorization boundaries, and who owns residual risk.</p>
     </div>
 
     <div class="section">
         <h2>Bible Verse + Encouragement</h2>
-        <p><strong>Lamentations 3:22&ndash;23</strong> &mdash; &ldquo;The steadfast love of the Lord never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness.&rdquo;</p>
-        <p style="color: #444;">A quiet Sunday is still a workday of the heart. New mercies cover the contract work, the family plans, and the long game of building the firm. Steady is enough.</p>
+        <p><strong>Psalm 90:17</strong> &mdash; &ldquo;Let the favor of the Lord our God be upon us, and establish the work of our hands upon us; yes, establish the work of our hands!&rdquo;</p>
+        <p>Monday is for establishing, not sprinting. The workshops, the 8(a) file, the outreach list, and the family calendar all count as work of the hands. Ask for favor, then do the next right page.</p>
+    </div>
+
+    <div class="section">
+        <h2>FL Federal Opportunity Scan <span class="pill">Daily SAM</span></h2>
+        <p class="note">Filter: FL place of performance or remote-eligible; NAICS 541611 / 611430 / 541219 / 561110 first; SDVOSB / small-business preference; exclude construction, facilities, medical commodities. Live SAM search today returned mostly stale or off-NAICS hits, so this is a working watch list plus adjacent Florida federal-market signals &mdash; not a bid-ready Top 5.</p>
+        <table>
+            <thead>
+                <tr><th>Item</th><th>Fit</th><th>Action</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>DHS / TSA training & acquisition support (ongoing APM vehicle)</td><td><span class="status-complete">HIGH</span></td><td>Protect current subcontract. Keep workshop cadence and SoA/metrics current.</td></tr>
+                <tr><td>SBA VBOC expansion &mdash; new Florida Veterans Business Outreach Center (grant announced 25 Sep)</td><td><span class="status-watch">WATCH</span></td><td>Not a prime bid. Relationship play with Veterans Florida / VBOC for training subcontract and veteran-entrepreneur referrals.</td></tr>
+                <tr><td>Florida APEX Accelerator / defense industrial-base counseling lane</td><td><span class="status-watch">WATCH</span></td><td>Partner path for SAM navigation clients you already market to.</td></tr>
+                <tr><td>State Dept INL worldwide TPC / program-support BPA (541611 / R408) &mdash; prior vehicle, currently inactive on SAM</td><td><span class="status-watch">MONITOR</span></td><td>Watch for recompete or call-order traffic; WOSB set-aside last cycle.</td></tr>
+                <tr><td>VA / DHS / USCG / NASA professional-services forecast check</td><td><span class="status-watch">PIPELINE</span></td><td>Monday forecast sweep: look for remote 541611/611430 set-asides due inside 10 days on SAM before EOD.</td></tr>
+            </tbody>
+        </table>
+        <p><strong>Due in 10 days:</strong> no clean, in-NAICS, remote-eligible solicitation with a hard close inside 10 days surfaced in this pass. Re-run SAM with set-aside = SDVOSB / Total SB and PSC R408 / R499 / U008 before Wednesday storms hit the calendar.</p>
+    </div>
+
+    <div class="section">
+        <h2>Weekly BD Pipeline + Prime Sweep <span class="pill">Monday jobs</span></h2>
+        <p><strong>Last week:</strong> Command Center stayed current; TSA APM workshop/training lane in progress; LLC / 8(a) balance-sheet work ongoing. No new prime award.</p>
+        <p><strong>This week due / focus:</strong> keep D-102 / TSAAM workshop materials tight; finish any SoA/metrics leftovers; one prime SBLO email; one SubNet check; confirm SAM entity dates.</p>
+        <p><strong>Forecast agencies:</strong> DHS/TSA (incumbent), VA (training/PMO), DoD (APEX/mentor path), USCG, NASA (harder remote fit).</p>
+        <p><strong>Three outreach actions:</strong></p>
+        <ol>
+            <li>Send the reusable capabilities note to one TSA/DHS prime SBLO (Booz, Deloitte, or the current prime chain) asking for 541611/611430 subcontract visibility.</li>
+            <li>Ping Veterans Florida / new VBOC lane &mdash; introduce M2 Torres as SDVOSB acquisition-training support, not as a grant applicant.</li>
+            <li>Run SubNet + USAspending last-30-day DHS awards and pick two primes that already buy training/PMO.</li>
+        </ol>
+        <p><strong>Reusable email (short):</strong><br>
+        Subject: SDVOSB acquisition training partner &mdash; DHS/TSA 541611<br>
+        Opening: M2 Torres Government Services (SDVOSB, CAGE 12PJ7, UEI F2L3JZJC76F5) supports TSA APM workshop facilitation under D-102-01 Rev 4 and TSAAM v4.3.2. We are looking for prime teammates who need remote-capable training, T&E awareness, risk, and workforce content. Happy to send a one-page capability sheet and past-performance snapshot.</p>
+        <p><strong>Tailored email:</strong> same body, swap the first sentence to name the prime&rsquo;s current DHS/TSA vehicle and one workshop topic they are short on (508, cyber scenario, ADE prep).</p>
+    </div>
+
+    <div class="section">
+        <h2>X Content Drawer <span class="pill">GM + Midday</span></h2>
+        <p><strong>Patriotic good morning (short):</strong><br>
+        Good morning, America. New mercies, honest work, and a flag that still means something. Have a strong Monday. #America</p>
+        <p><strong>Midday options:</strong></p>
+        <ol>
+            <li>Markets: Gold and silver sold off hard while Bitcoin slipped under $84k. Hormuz is the headline. Discipline beats the refresh button.</li>
+            <li>Work: Acquisition is still a people system. Policy manuals do not train the workforce &mdash; instructors do.</li>
+            <li>Faith + country: Psalm 90:17. Establish the work of our hands. That is a Monday prayer and a project plan.</li>
+        </ol>
+        <p class="note">Images: use a flag / sunrise Florida shot for the GM post; keep midday text-only or a simple markets card. Drafts only &mdash; nothing auto-posted.</p>
     </div>
 
     <div class="section">
         <h2>Power User Tips</h2>
         <ul>
-            <li>Use the dry, cooler morning for any outdoor electrical or home-project checks before midweek storms return.</li>
-            <li>Weekend is a good window to batch TSA workshop notes and SoA/metrics items before Monday email traffic.</li>
-            <li>Watch silver near $64 and gold near $4,285; no need to chase Sunday prints &mdash; stack on dips you already like.</li>
-            <li>Keep the command-center push paired with every morning brief so the dashboard never goes stale.</li>
+            <li>Outdoor electrical / sauna-circuit work: today and Tuesday morning before midweek storms.</li>
+            <li>Batch workshop notes before inbox noise peaks after 3 p.m.</li>
+            <li>Silver ~$61 and gold ~$4,140 are dip territory versus last week &mdash; only if it matches your stack plan.</li>
+            <li>Command Center now carries every automation. If a scheduled job runs, it should leave a row in the log and a section on this page.</li>
         </ul>
     </div>
 
@@ -108,10 +162,16 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Sept 27</strong></td>
-                    <td>Refreshed Command Center morning brief (markets, St. Cloud weather, world/business/tech headlines, verse, tips) and pushed to GitHub.</td>
+                    <td><strong>Sept 28</strong></td>
+                    <td>Rolled every daily/weekly automation into the Command Center (brief, stocks, newsletter, SAM scan, X drafts, Monday BD + prime sweep) and pushed to GitHub.</td>
                     <td><span class="status-complete">COMPLETE</span></td>
-                    <td>Standing rule confirmed: push to M3Torres/m2torres-command-center whenever a morning brief is delivered.</td>
+                    <td>New standing rule: scheduled jobs write here, not only in chat.</td>
+                </tr>
+                <tr>
+                    <td><strong>Sept 27</strong></td>
+                    <td>Refreshed Command Center morning brief and pushed to GitHub.</td>
+                    <td><span class="status-complete">COMPLETE</span></td>
+                    <td>Prior standing rule: push whenever a morning brief is delivered.</td>
                 </tr>
                 <tr>
                     <td>Sept 2026 (ongoing)</td>
@@ -130,8 +190,8 @@
     </div>
 
     <footer>
-        Generated for M2 Torres Government Services &bull; Sunday, September 27, 2026 &bull; Fresh data &bull; No stale content<br>
-        Replace logo.png in this repo with the official checkered logo if the placeholder is still in use.
+        Generated for M2 Torres Government Services &bull; Monday, September 28, 2026 &bull; All automations on one page<br>
+        Repo: M3Torres/m2torres-command-center &bull; Replace logo.png if the placeholder is still in use.
     </footer>
 </body>
 </html>
